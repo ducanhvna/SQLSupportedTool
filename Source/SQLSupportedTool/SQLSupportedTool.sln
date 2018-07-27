@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibCommon", "LibCommon\LibC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibPluginManagerment", "LibPluginManagerment\LibPluginManagerment.csproj", "{BE7C643E-AA71-411A-915B-50AC9FA807F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginHumanResourceManagerment", "PluginHumanResourceManagerment\PluginHumanResourceManagerment.csproj", "{B3CDB125-A1D9-4528-8EF5-4E679B2EA31A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BE7C643E-AA71-411A-915B-50AC9FA807F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE7C643E-AA71-411A-915B-50AC9FA807F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE7C643E-AA71-411A-915B-50AC9FA807F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3CDB125-A1D9-4528-8EF5-4E679B2EA31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3CDB125-A1D9-4528-8EF5-4E679B2EA31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3CDB125-A1D9-4528-8EF5-4E679B2EA31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3CDB125-A1D9-4528-8EF5-4E679B2EA31A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
