@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
 
-namespace LibCommon.CommonStructure
+namespace CommonNS.CommonStructure
 {
     /// <summary>
     /// Object containers

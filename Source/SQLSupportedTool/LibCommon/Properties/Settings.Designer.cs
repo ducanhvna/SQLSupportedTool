@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LibCommon.Properties
+namespace CommonNS.Properties
 {
 
 

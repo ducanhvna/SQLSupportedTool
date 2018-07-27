@@ -1,5 +1,5 @@
 ﻿using HumanResourceManagermentNS.InternalShared;
-using LibCommon.CommonStructure;
+using CommonNS.CommonStructure;
 using PluginManagermentNS;
 using System;
 using System.Collections.Generic;

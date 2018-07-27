@@ -4,9 +4,50 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SQLSupportedTool"
+        xmlns:domain="clr-namespace:CommonNS.CommonStructure;assembly=LibCommon"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid x:Name="mainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <!--Configurator Panel-->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!--Properties Tree Area-->
+            <Grid>
+                <TreeView  SelectedItemChanged="TreeView_SelectedItemChanged">
+                    <TreeView.Resources>
+                        <HierarchicalDataTemplate  ItemsSource="{Binding SubGroups}" DataType="{x:Type domain:IObjectContainers}">
+                            <TextBlock Text="{Binding Name}">
+                                <!--<TextBlock.InputBindings>
+                                    <MouseBinding Command="{Binding ElementName=mainGrid, Path=DataContext.SelectContainerCommand}" 
+                                                  CommandParameter="{Binding}"
+                                                  MouseAction="LeftClick" />
+                                </TextBlock.InputBindings>-->
+                            </TextBlock>
+                        </HierarchicalDataTemplate>
+                    </TreeView.Resources>
+                </TreeView>
+            </Grid>
+            <!--Properties View Area-->
+            <Grid Grid.Row="1">
+                <GroupBox Header="Properties">
+                    <Grid Name="propertyViewContent">
+
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </Grid>
+
+        <!--Image Grid-->
+
+        <Grid Grid.Column="1">
+           
+        </Grid>
     </Grid>
 </Window>

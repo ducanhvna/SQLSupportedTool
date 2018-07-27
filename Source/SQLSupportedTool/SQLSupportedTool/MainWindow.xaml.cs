@@ -28,5 +28,10 @@ namespace SQLSupportedTool
             MessageBox.Show(listPlugins.First().Name);
 
         }
+
+        private void TreeView_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+
+        }
     }
 }

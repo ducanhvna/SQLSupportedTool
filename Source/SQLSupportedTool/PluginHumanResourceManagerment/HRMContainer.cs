@@ -1,5 +1,5 @@
 ﻿using HumanResourceManagermentNS.View;
-using LibCommon.CommonStructure;
+using CommonNS.CommonStructure;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
