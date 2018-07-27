@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLSupportedTool", "SQLSupportedTool\SQLSupportedTool.csproj", "{8EE5DF37-63E0-41D7-A569-1A7079D29451}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B3CDB125-A1D9-4528-8EF5-4E679B2EA31A} = {B3CDB125-A1D9-4528-8EF5-4E679B2EA31A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibCommon", "LibCommon\LibCommon.csproj", "{2FF2A8F5-06C4-431A-A533-9A3525B933E5}"
 EndProject

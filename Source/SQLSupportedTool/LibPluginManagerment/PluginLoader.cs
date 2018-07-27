@@ -21,8 +21,13 @@ using System.Reflection;
 
 namespace PluginManagermentNS
 {
-	public static class PluginLoader
+	internal static class PluginLoader
 	{
+        /// <summary>
+        /// LoadPlugins
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
 		public static ICollection<IPlugin> LoadPlugins(string path)
 		{
 			string[] dllFileNames = null;

@@ -93,5 +93,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibCommon\LibCommon.csproj">
+      <Project>{2ff2a8f5-06c4-431a-a533-9a3525b933e5}</Project>
+      <Name>LibCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibPluginManagerment\LibPluginManagerment.csproj">
+      <Project>{be7c643e-aa71-411a-915b-50ac9fa807f7}</Project>
+      <Name>LibPluginManagerment</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

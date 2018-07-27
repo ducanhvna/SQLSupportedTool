@@ -1,4 +1,5 @@
-﻿using LibCommon.CommonStructure;
+﻿using HumanResourceManagermentNS.InternalShared;
+using LibCommon.CommonStructure;
 using PluginManagermentNS;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,13 @@ namespace HumanResourceManagermentNS
 {
     class HRMPlugin : IPlugin
     {
-        public string Name => throw new NotImplementedException();
+        public string Name
+        {
+            get
+            {
+                return InternalConstants.PLUGIN_NAME;
+            }
+        }
 
         public IObjectContainers CreateContainer(int key, string name)
         {

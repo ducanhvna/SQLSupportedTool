@@ -10,6 +10,9 @@ using System.Windows.Controls;
 
 namespace HumanResourceManagermentNS
 {
+    /// <summary>
+    /// Container
+    /// </summary>
     class HRMContainer : IObjectContainers
     {
         /// <summary>
