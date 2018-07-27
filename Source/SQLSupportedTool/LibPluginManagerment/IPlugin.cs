@@ -1,8 +1,10 @@
-﻿using System;
+﻿using LibCommon.CommonStructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace PluginManagermentNS
 {
@@ -16,7 +18,14 @@ namespace PluginManagermentNS
         /// </summary>
         string Name { get; }
 
-        void Do();
+        /// <summary>
+        /// CreateContainer
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        IObjectContainers CreateContainer(int key,string name);
+
+
 
     }
 }

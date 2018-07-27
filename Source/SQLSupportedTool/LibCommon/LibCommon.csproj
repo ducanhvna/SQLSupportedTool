@@ -53,6 +53,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonStructure\IObjectContainers.cs" />
     <Compile Include="MvvM\Helpers\Converters.cs" />
     <Compile Include="MvvM\Helpers\DialogCloser.cs" />
     <Compile Include="MvvM\Helpers\IClosableViewModel.cs" />
@@ -80,5 +81,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
