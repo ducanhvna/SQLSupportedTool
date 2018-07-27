@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SQLSupportedTool"
         xmlns:domain="clr-namespace:CommonNS.CommonStructure;assembly=LibCommon"
+        xmlns:vm="clr-namespace:SQLSupportedTool.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        DataContext="{DynamicResource viewmodelMain}">
+    <Window.Resources>
+        <vm:ViewModelMainWindow x:Key="viewmodelMain"></vm:ViewModelMainWindow>
+    </Window.Resources>
     <Grid x:Name="mainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
@@ -20,9 +25,15 @@
             </Grid.RowDefinitions>
             <!--Properties Tree Area-->
             <Grid>
-                <TreeView  SelectedItemChanged="TreeView_SelectedItemChanged">
+                <TreeView  SelectedItemChanged="TreeView_SelectedItemChanged" ItemsSource="{Binding ListObjectContainers}">
+                    <TreeView.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}"/>
+                        </DataTemplate>
+                    </TreeView.ItemTemplate>
                     <TreeView.Resources>
-                        <HierarchicalDataTemplate  ItemsSource="{Binding SubGroups}" DataType="{x:Type domain:IObjectContainers}">
+                    
+                        <HierarchicalDataTemplate  ItemsSource="{Binding SubItems}" DataType="{x:Type domain:IObjectContainers}">
                             <TextBlock Text="{Binding Name}">
                                 <!--<TextBlock.InputBindings>
                                     <MouseBinding Command="{Binding ElementName=mainGrid, Path=DataContext.SelectContainerCommand}" 

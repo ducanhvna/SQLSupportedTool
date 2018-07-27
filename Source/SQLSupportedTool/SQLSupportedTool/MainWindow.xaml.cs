@@ -24,8 +24,6 @@ namespace SQLSupportedTool
         public MainWindow()
         {
             InitializeComponent();
-            var listPlugins = PluginManagement.LoadPlugins("plugin");
-            MessageBox.Show(listPlugins.First().Name);
 
         }
 

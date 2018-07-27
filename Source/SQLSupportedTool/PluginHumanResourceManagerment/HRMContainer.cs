@@ -15,6 +15,7 @@ namespace HumanResourceManagermentNS
     /// </summary>
     class HRMContainer : IObjectContainers
     {
+        #region Constructor
         /// <summary>
         /// Constructor
         /// </summary>
@@ -29,8 +30,20 @@ namespace HumanResourceManagermentNS
             DiagramView = new HRMDiagramView();
             PropertiesView = new HRMPropertiesView();
             CommandView = new HRMCommandView();
+
+            // Create sub items
+            CreateSubItems();
         }
 
+        /// <summary>
+        /// CreateSubItems
+        /// </summary>
+        private void CreateSubItems()
+        {
+            SubItems = new ObservableCollection<IObjectContainers>();
+        }
+
+        #endregion
         /// <summary>
         /// Key
         /// </summary>
